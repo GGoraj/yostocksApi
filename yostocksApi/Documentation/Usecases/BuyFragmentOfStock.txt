@@ -1,0 +1,17 @@
+﻿1. User want's to buy a stock-fragment in order to invest via the application.
+2. User is logged in.
+3. User chooses the brand of the stock.
+4. User sees full detail of the chosen stock:
+	-Brand name
+	-Logo
+	-Full stock value
+	-entry window where he specifies sum to invest
+	-Pay button
+
+5. User decides how much he wants to invest and then fills up the entry window.
+6. User Clicks the Pay button and User sees the pop-up window that informs about the Sum to transfer, window asks for consent.
+
+6a. User clicks Cancel button and is taken to previous screen.
+6b. User Clicks Pay button and is taken to Page displaying Users current portfolio.
+
+

@@ -1,0 +1,24 @@
+﻿User clicked the BuyStockFragment button.
+Native App sent request to the API.
+API is binding BuyStockFragmentModel in appropriate controller.
+Controller wants to know which UserId and StockId should be assigned to DB entry in the StockFragment table
+
+1. Problem: Which StockId should be fragmented and asigned to user
+	
+	1. Solution: 
+	// list of fragments corresponding to particular stocks
+	// if one stock can issue only 5% of required stock fragment then
+	//perhaps NEXT stock can issue the rest, and so on
+	//if list of stocks.length is f.e. 3 and there is no more stocks to fragment,
+	//system has to buy more stocks of the same Brand.
+	//before it happends though, system (it cant hold client's account) issues as many fragments as it's 
+	//capable of. User should get an email/sms as soon required stock is available and decide
+	//wether or not to get more fragments of required Brand - paying Current Market Price.
+
+2. Problem
+	How we calculate remaining value of particular stock.
+	Stock is 100%
+	then user requires 500DKK - how do I calculate this percentage:
+		- how much percent is 500DKK of 100% of Stock we have
+		or
+		- how much percent is 500DKK of Stock market value ?
